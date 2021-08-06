@@ -53,10 +53,16 @@ public class CubeScript : MonoBehaviour
             new Vector3(1.0f, -1.0f, 1.0f),
             new Vector3(1.0f, -1.0f, -1.0f),
             new Vector3(1.0f, 1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f)
+            new Vector3(1.0f, 1.0f, 1.0f),
 
             // Task 2: Define vertices for front and back faces
             // Remember to also define corresponding vertex colours!
+            new Vector3(-1.0f, -1.0f, -1.0f), // Right
+            new Vector3(-1.0f, 1.0f, 1.0f),
+            new Vector3(1.0f, 1.0f, -1.0f),
+            new Vector3(1.0f, 1.0f, -1.0f),
+            new Vector3(1.0f, -1.0f, -1.0f),
+            new Vector3(-1.0f, -1.0f, -1.0f)
         };
 
         // Define the vertex colours
@@ -87,7 +93,14 @@ public class CubeScript : MonoBehaviour
             Color.yellow,
             Color.yellow,
             Color.yellow,
-            Color.yellow
+            Color.yellow,
+
+            Color.green, // Right
+            Color.green,
+            Color.green,
+            Color.blue, // Right
+            Color.blue,
+            Color.blue
         };
 
         // Automatically define the triangles based on the number of vertices
